@@ -1,9 +1,12 @@
+
 import React from 'react'
 import styles from '@/app/styles/Value.module.css'
-type Props = {}
+type Props = {
+  value:number
+}
 
-export default function ValueComponent({}: Props) {
+export default function ValueComponent(props: Props) {
   return (
-    <div className={styles.valueContainer}>0</div>
+    <div className={styles.valueContainer}>{props.value}</div>
   )
 }
