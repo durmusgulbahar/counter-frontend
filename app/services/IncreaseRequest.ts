@@ -1,5 +1,5 @@
 export const increaseRequest = async () => {
-    const data = await   fetch('http://localhost:4000/api/increase', {
+    const data = await   fetch('http://counter-app:4000/api/increase', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

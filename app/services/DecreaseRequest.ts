@@ -1,5 +1,5 @@
 export const decreaseRequest = async () => {
-    const data = await   fetch('http://localhost:4000/api/decrease', {
+    const data = await   fetch('http://counter-app:4000/api/decrease', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
