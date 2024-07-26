@@ -16,6 +16,7 @@ export default function Home() {
         <ButtonComponent label="Increment" func={increment} />
         <ButtonComponent label="Decrement" func={decrement} />
       </div>
+      <a href="/logs">GO TO LOGS</a>
     </main>
   );
 }

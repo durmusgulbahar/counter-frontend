@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { getValue } from '../services/GetValue';
 import { increaseRequest } from '../services/IncreaseRequest';
 import { decreaseRequest } from '../services/DecreaseRequest';
+import { getLogs } from '../services/GetLogs';
 type State = {
   value: number;
 }
@@ -30,4 +31,5 @@ export const useStore = create<State & Actions>((set) => ({
     // Update state with the fetched value
     set({ value: result });
   },
+
 }));
