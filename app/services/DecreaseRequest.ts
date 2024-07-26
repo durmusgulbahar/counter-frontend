@@ -1,5 +1,6 @@
+  const apiUrl = 'https://api.durmusgulbahar.dev'
 export const decreaseRequest = async () => {
-    const data = await   fetch('http://counter-app:4000/api/decrease', {
+    const data = await   fetch(`${apiUrl}/api/decrease`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
