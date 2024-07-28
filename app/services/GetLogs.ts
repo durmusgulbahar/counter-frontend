@@ -24,4 +24,5 @@ export const getLogs = async (): Promise<LogEntry[]> => {
     console.error('Error fetching logs:', error);
     throw error; // Re-throw the error for handling in the calling component
   }
+
 };
